@@ -1,0 +1,14 @@
+*.class
+*.cmd
+*.properties
+*.jar
+*.rar
+*.tar
+*.zip
+*.lst
+*.bak
+*.classpath
+*.settings
+*.project
+target/
+/bin/
