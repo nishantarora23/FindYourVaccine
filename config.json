@@ -1,0 +1,754 @@
+{
+	"result": [
+		{
+			"_type": "config",
+			"options": {
+				"foldGutter": true,
+				"mode": "application/ld+json",
+				"lint": true,
+				"lineNumbers": true,
+				"autoCloseBrackets": true,
+				"autoRefresh": true,
+				"gutters": [
+					"CodeMirror-linenumbers",
+					"CodeMirror-foldgutter",
+					"CodeMirror-lint-markers"
+				],
+				"theme": "cobalt",
+				"matchBrackets": true,
+				"lineWrapping": true
+			},
+			"details": "CONFIGURATION_STORE in EN-US ",
+			"title": "Configuration Store",
+			"configList": {
+				"api": "http://localhost:8889/config/configList"
+			},
+			"config": {
+				"api": "http://localhost:8889/config/{{id}}"
+			},
+			"events": [
+				{
+					"class": "",
+					"label": "Update",
+					"api": ""
+				}
+			],
+			"id": "CONFIGURATION_STORE_EN-US"
+		},
+		{
+			"_type": "config",
+			"options": {
+				"foldGutter": true,
+				"mode": "application/ld+json",
+				"lint": true,
+				"lineNumbers": true,
+				"autoCloseBrackets": true,
+				"autoRefresh": true,
+				"gutters": [
+					"CodeMirror-linenumbers",
+					"CodeMirror-foldgutter",
+					"CodeMirror-lint-markers"
+				],
+				"theme": "cobalt",
+				"matchBrackets": true,
+				"lineWrapping": true
+			},
+			"details": "EN-US à¬°à­‡ à¬•à¬¨à¬«à¬¿à¬—à¬°à­‡à¬¸à¬¨à­ à¬·à­à¬Ÿà­‹à¬°",
+			"title": "à¬¬à¬¿à¬¨à­à­Ÿà¬¾à¬¸ à¬·à­à¬Ÿà­‹à¬°à­",
+			"configList": {
+				"api": "http://localhost:8889/config/configList"
+			},
+			"config": {
+				"api": "http://localhost:8889/config/{{id}}"
+			},
+			"id": "CONFIGURATION_STORE_OD"
+		},
+		{
+			"languages": [
+				{
+					"default": true,
+					"code": "en-US",
+					"place": "United States",
+					"title": "English (US)"
+				},
+				{
+					"title": "EspaÃ±ol",
+					"code": "es",
+					"place": "Spanish"
+				},
+				{
+					"title": "à¤¹à¤¿à¤‚à¤¦à¥€ (Hindi)",
+					"code": "hi",
+					"place": "India"
+				},
+				{
+					"title": "à¬“à¬¡à¬¿à¬† (Odia)",
+					"code": "od",
+					"place": "Odisha"
+				},
+				{
+					"title": "PortuguÃªs",
+					"code": "pt",
+					"place": "Brazil"
+				}
+			],
+			"_type": "config",
+			"id": "LANGUAGES"
+		},
+		{
+			"_type": "config",
+			"default": {
+				"title": "Vaccine Tracker",
+				"items": [
+					{
+						"icon": "fas fa-2x fa-dollar-sign",
+						"routerLink": "/home",
+						"id": "home",
+						"label": "Home",
+						"configId": "USER_INFO"
+					},
+					{
+						"icon": "fas fa-2x fa-list-alt",
+						"routerLink": "/configurationStore",
+						"id": "configurationStore",
+						"label": "Configuration Store",
+						"configId": "CONFIGURATION_STORE"
+					}
+				],
+				"landingPageDetails": {
+					"configId": "USER_INFO",
+					"routerLink": "/home",
+					"id": "home"
+				}
+			},
+			"details": "navbar",
+			"id": "NAVBAR_EN-US"
+		},
+		{
+			"_type": "config",
+			"default": {
+				"title": "Rastreador de vacunas",
+				"items": [
+					{
+						"icon": "fas fa-2x fa-dollar-sign",
+						"routerLink": "/home",
+						"id": "home",
+						"label": "Casa",
+						"configId": "USER_INFO"
+					},
+					{
+						"icon": "fas fa-2x fa-list-alt",
+						"routerLink": "/configurationStore",
+						"id": "configurationStore",
+						"label": "Tienda de configuraciÃ³n",
+						"configId": "CONFIGURATION_STORE"
+					}
+				],
+				"landingPageDetails": {
+					"configId": "USER_INFO",
+					"routerLink": "/home",
+					"id": "home"
+				}
+			},
+			"details": "navbar",
+			"id": "NAVBAR_ES"
+		},
+		{
+			"_type": "config",
+			"default": {
+				"title": "à¤µà¥ˆà¤•à¥à¤¸à¥€à¤¨ à¤Ÿà¥à¤°à¥ˆà¤•à¤°",
+				"items": [
+					{
+						"icon": "fas fa-2x fa-dollar-sign",
+						"routerLink": "/home",
+						"id": "home",
+						"label": "Home",
+						"configId": "USER_INFO"
+					},
+					{
+						"icon": "fas fa-2x fa-list-alt",
+						"routerLink": "/configurationStore",
+						"id": "configurationStore",
+						"label": "à¤•à¥‰à¤¨à¥à¤«à¤¼à¤¿à¤—à¤°à¥‡à¤¶à¤¨ à¤¸à¥à¤Ÿà¥‹à¤°",
+						"configId": "CONFIGURATION_STORE"
+					}
+				],
+				"landingPageDetails": {
+					"configId": "USER_INFO",
+					"routerLink": "/home",
+					"id": "home"
+				}
+			},
+			"details": "navbar",
+			"id": "NAVBAR_HI"
+		},
+		{
+			"_type": "config",
+			"default": {
+				"title": "à¬Ÿà¬¿à¬•à¬¾ à¬Ÿà­à¬°à¬¾à¬•à¬°à­",
+				"items": [
+					{
+						"icon": "fas fa-2x fa-dollar-sign",
+						"routerLink": "/home",
+						"id": "home",
+						"label": "Home",
+						"configId": "USER_INFO"
+					},
+					{
+						"icon": "fas fa-2x fa-list-alt",
+						"routerLink": "/configurationStore",
+						"id": "configurationStore",
+						"label": "à¬¬à¬¿à¬¨à­à­Ÿà¬¾à¬¸ à¬·à­à¬Ÿà­‹à¬°à­",
+						"configId": "CONFIGURATION_STORE"
+					}
+				],
+				"landingPageDetails": {
+					"configId": "USER_INFO",
+					"routerLink": "/home",
+					"id": "home"
+				}
+			},
+			"details": "navbar",
+			"id": "NAVBAR_OD"
+		},
+		{
+			"_type": "config",
+			"title": "User Info.",
+			"formDetails": [
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true,
+						"email": true
+					},
+					"control": "email",
+					"tag": "input",
+					"label": "Email",
+					"placeholder": "Enter email address",
+					"type": "email",
+					"class": "col-sm-12 col-md-12 col-lg-12 mb-1",
+					"errors": {
+						"pattern": "Please provide valid email address",
+						"required": "Email is required",
+						"email": "Please provide valid email address"
+					}
+				},
+				{
+					"onChange": "district",
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"control": "state",
+					"api": {
+						"title": "state_name",
+						"path": "states",
+						"url": "https://cdn-api.co-vin.in/api/v2/admin/location/states"
+					},
+					"tag": "select",
+					"label": "State",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "Please select correct state"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"control": "district",
+					"tag": "select",
+					"api": {
+						"path": "districts",
+						"title": "district_name",
+						"dependent": "state",
+						"url": "https://cdn-api.co-vin.in/api/v2/admin/location/districts/{{dependent.state_id}}"
+					},
+					"label": "District",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "Please select correct district"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"jsonpath": {
+						"path": "configuration.age",
+						"wrap": false
+					},
+					"control": "age",
+					"tag": "input",
+					"label": "Age",
+					"type": "radio",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "Select an age"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"pattern": "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$"
+					},
+					"control": "pincode",
+					"tag": "input",
+					"label": "Pincode",
+					"type": "number",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"pattern": "Please provide valid pincode"
+					}
+				}
+			],
+			"age": [
+				{
+					"labelName": "18+",
+					"labelValue": "18+"
+				},
+				{
+					"labelName": "35+",
+					"labelValue": "35+"
+				}
+			],
+			"events": [
+				{
+					"icon": "",
+					"className": "col-sm-12 col-md-6 col-lg-6",
+					"api": "http://localhost:8889/insertUserInfo",
+					"label": "Submit",
+					"type": "submit",
+					"class": "btn btn-outline-success btn-block",
+					"toaster": {
+						"onError": {
+							"message": "Internal Server Error.",
+							"type": "error",
+							"status": "Error"
+						},
+						"onSuccess": {
+							"message": "Successfully updated the user info.",
+							"type": "success",
+							"status": "Successful"
+						}
+					}
+				},
+				{
+					"icon": "",
+					"className": "col-sm-12 col-md-6 col-lg-6",
+					"label": "Clear",
+					"type": "clear",
+					"class": "btn btn-outline-danger btn-block"
+				}
+			],
+			"id": "USER_INFO_EN-US"
+		},
+		{
+			"_type": "config",
+			"title": "InformaciÃ³n de usuario.",
+			"formDetails": [
+				{
+					"defaultValue": "",
+					"validators": {
+						"pattern": "^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$",
+						"required": true,
+						"email": true
+					},
+					"control": "email",
+					"tag": "input",
+					"label": "Correo electrÃ³nico",
+					"placeholder": "Introduzca la direcciÃ³n de correo electrÃ³nico",
+					"type": "email",
+					"class": "col-sm-12 col-md-12 col-lg-12 mb-1",
+					"errors": {
+						"pattern": "Proporcione una direcciÃ³n de correo electrÃ³nico vÃ¡lida",
+						"required": "correo electronico es requerido",
+						"email": "Proporcione una direcciÃ³n de correo electrÃ³nico vÃ¡lida"
+					}
+				},
+				{
+					"onChange": "district",
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"control": "state",
+					"api": {
+						"title": "state_name",
+						"path": "states",
+						"url": "https://cdn-api.co-vin.in/api/v2/admin/location/states"
+					},
+					"tag": "select",
+					"label": "Expresar",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "Seleccione el estado correcto"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"control": "district",
+					"tag": "select",
+					"api": {
+						"path": "districts",
+						"title": "district_name",
+						"dependent": "state",
+						"url": "https://cdn-api.co-vin.in/api/v2/admin/location/districts/{{dependent.state_id}}"
+					},
+					"label": "Distrito",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "Seleccione el distrito correcto"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"jsonpath": {
+						"path": "configuration.age",
+						"wrap": false
+					},
+					"control": "age",
+					"tag": "input",
+					"label": "Edad",
+					"type": "radio",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "Seleccione una edad"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"pattern": "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$"
+					},
+					"control": "pincode",
+					"tag": "input",
+					"label": "CÃ³digo PIN",
+					"type": "number",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"pattern": "Proporcione un cÃ³digo PIN vÃ¡lido"
+					}
+				}
+			],
+			"age": [
+				{
+					"labelName": "18+",
+					"labelValue": "18+"
+				},
+				{
+					"labelName": "35+",
+					"labelValue": "35+"
+				}
+			],
+			"events": [
+				{
+					"icon": "",
+					"className": "col-sm-12 col-md-6 col-lg-6",
+					"api": "http://localhost:8889/insertUserInfo",
+					"label": "Enviar",
+					"type": "submit",
+					"class": "btn btn-outline-success btn-block",
+					"toaster": {
+						"onError": {
+							"message": "Error de servidor interno.",
+							"type": "error",
+							"status": "Error"
+						},
+						"onSuccess": {
+							"message": "Se actualizÃ³ correctamente la informaciÃ³n del usuario.",
+							"type": "success",
+							"status": "Exitosa"
+						}
+					}
+				},
+				{
+					"icon": "",
+					"className": "col-sm-12 col-md-6 col-lg-6",
+					"label": "Clara",
+					"type": "clear",
+					"class": "btn btn-outline-danger btn-block"
+				}
+			],
+			"id": "USER_INFO_ES"
+		},
+		{
+			"_type": "config",
+			"title": "à¤‰à¤ªà¤¯à¥‹à¤—à¤•à¤°à¥à¤¤à¤¾ à¤œà¤¾à¤¨à¤•à¤¾à¤°à¥€",
+			"formDetails": [
+				{
+					"defaultValue": "",
+					"validators": {
+						"pattern": "^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$",
+						"required": true,
+						"email": true
+					},
+					"control": "email",
+					"tag": "input",
+					"label": "à¤ˆà¤®à¥‡à¤²",
+					"placeholder": "à¤ˆà¤®à¥‡à¤² à¤ªà¤¤à¤¾ à¤¦à¤°à¥à¤œ à¤•à¤°à¥‡à¤‚",
+					"type": "email",
+					"class": "col-sm-12 col-md-12 col-lg-12 mb-1",
+					"errors": {
+						"pattern": "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤®à¤¾à¤¨à¥à¤¯ à¤ˆà¤®à¥‡à¤² à¤ªà¤¤à¤¾ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¥‡à¤‚",
+						"required": "à¤ˆà¤®à¥‡à¤² à¤œà¤°à¥à¤°à¥€ à¤¹à¥ˆ",
+						"email": "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤®à¤¾à¤¨à¥à¤¯ à¤ˆà¤®à¥‡à¤² à¤ªà¤¤à¤¾ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¥‡à¤‚"
+					}
+				},
+				{
+					"onChange": "district",
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"control": "state",
+					"api": {
+						"title": "state_name",
+						"path": "states",
+						"url": "https://cdn-api.co-vin.in/api/v2/admin/location/states"
+					},
+					"tag": "select",
+					"label": "à¤°à¤¾à¤œà¥à¤¯",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤¸à¤¹à¥€ à¤°à¤¾à¤œà¥à¤¯ à¤šà¥à¤¨à¥‡à¤‚"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"control": "district",
+					"tag": "select",
+					"api": {
+						"path": "districts",
+						"title": "district_name",
+						"dependent": "state",
+						"url": "https://cdn-api.co-vin.in/api/v2/admin/location/districts/{{dependent.state_id}}"
+					},
+					"label": "à¤œà¤¿à¤²à¤¾",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤¸à¤¹à¥€ à¤œà¤¿à¤²à¥‡ à¤•à¤¾ à¤šà¤¯à¤¨ à¤•à¤°à¥‡à¤‚"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"jsonpath": {
+						"path": "configuration.age",
+						"wrap": false
+					},
+					"control": "age",
+					"tag": "input",
+					"label": "à¤‰à¤®à¥à¤°",
+					"type": "radio",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "à¤à¤• à¤‰à¤®à¥à¤° à¤šà¥à¤¨à¥‡à¤‚"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"pattern": "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$"
+					},
+					"control": "pincode",
+					"tag": "input",
+					"label": "à¤ªà¤¿à¤¨ à¤•à¥‹à¤¡",
+					"type": "number",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"pattern": "à¤•à¥ƒà¤ªà¤¯à¤¾ à¤®à¤¾à¤¨à¥à¤¯ à¤ªà¤¿à¤¨à¤•à¥‹à¤¡ à¤ªà¥à¤°à¤¦à¤¾à¤¨ à¤•à¤°à¥‡à¤‚"
+					}
+				}
+			],
+			"age": [
+				{
+					"labelName": "à¥§à¥®+",
+					"labelValue": "18+"
+				},
+				{
+					"labelName": "à¥©à¥«+",
+					"labelValue": "35+"
+				}
+			],
+			"events": [
+				{
+					"icon": "",
+					"className": "col-sm-12 col-md-6 col-lg-6",
+					"api": "http://localhost:8889/insertUserInfo",
+					"label": "à¤ªà¥à¤°à¤¸à¥à¤¤à¥à¤¤",
+					"type": "submit",
+					"class": "btn btn-outline-success btn-block",
+					"toaster": {
+						"onError": {
+							"message": "à¤†à¤‚à¤¤à¤°à¤¿à¤• à¤¸à¤°à¥à¤µà¤° à¤¤à¥à¤°à¥à¤Ÿà¤¿",
+							"type": "error",
+							"status": "à¤¤à¥à¤°à¥à¤Ÿà¤¿"
+						},
+						"onSuccess": {
+							"message": "à¤‰à¤ªà¤¯à¥‹à¤—à¤•à¤°à¥à¤¤à¤¾ à¤œà¤¾à¤¨à¤•à¤¾à¤°à¥€ à¤•à¥‹ à¤¸à¤«à¤²à¤¤à¤¾à¤ªà¥‚à¤°à¥à¤µà¤• à¤…à¤ªà¤¡à¥‡à¤Ÿ à¤•à¤¿à¤¯à¤¾ à¤—à¤¯à¤¾",
+							"type": "success",
+							"status": "à¤¸à¤«à¤²"
+						}
+					}
+				},
+				{
+					"icon": "",
+					"className": "col-sm-12 col-md-6 col-lg-6",
+					"label": "à¤¸à¥à¤ªà¤·à¥à¤Ÿ",
+					"type": "clear",
+					"class": "btn btn-outline-danger btn-block"
+				}
+			],
+			"id": "USER_INFO_HI"
+		},
+		{
+			"_type": "config",
+			"title": "à¬‰à¬ªà¬¯à­‹à¬—à¬•à¬°à­à¬¤à­à¬¤à¬¾ à¬¸à­‚à¬šà¬¨à¬¾",
+			"formDetails": [
+				{
+					"defaultValue": "",
+					"validators": {
+						"pattern": "^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$",
+						"required": true,
+						"email": true
+					},
+					"control": "email",
+					"tag": "input",
+					"label": "à¬‡à¬®à­‡à¬²à­",
+					"placeholder": "Enter email address",
+					"type": "email",
+					"class": "col-sm-12 col-md-12 col-lg-12 mb-1",
+					"errors": {
+						"pattern": "à¬¦à­Ÿà¬¾à¬•à¬°à¬¿ à¬¸à¬ à¬¿à¬•à­ à¬‡à¬®à­‡à¬²à­ à¬ à¬¿à¬•à¬£à¬¾ à¬ªà­à¬°à¬¦à¬¾à¬¨ à¬•à¬°à¬¨à­à¬¤à­",
+						"required": "à¬‡à¬®à­‡à¬²à­ à¬†à¬¬à¬¶à­à­Ÿà¬•",
+						"email": "à¬¦à­Ÿà¬¾à¬•à¬°à¬¿ à¬¸à¬ à¬¿à¬•à­ à¬‡à¬®à­‡à¬²à­ à¬ à¬¿à¬•à¬£à¬¾ à¬ªà­à¬°à¬¦à¬¾à¬¨ à¬•à¬°à¬¨à­à¬¤à­"
+					}
+				},
+				{
+					"onChange": "district",
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"control": "state",
+					"api": {
+						"title": "state_name",
+						"path": "states",
+						"url": "https://cdn-api.co-vin.in/api/v2/admin/location/states"
+					},
+					"tag": "select",
+					"label": "à¬°à¬¾à¬œà­à­Ÿ",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "à¬¦à­Ÿà¬¾à¬•à¬°à¬¿ à¬¸à¬ à¬¿à¬•à­ à¬¸à­à¬¥à¬¿à¬¤à¬¿ à¬šà­Ÿà¬¨ à¬•à¬°à¬¨à­à¬¤à­"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"control": "district",
+					"tag": "select",
+					"api": {
+						"path": "districts",
+						"title": "district_name",
+						"dependent": "state",
+						"url": "https://cdn-api.co-vin.in/api/v2/admin/location/districts/{{dependent.state_id}}"
+					},
+					"label": "à¬œà¬¿à¬²à­à¬²à¬¾",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "à¬¦à­Ÿà¬¾à¬•à¬°à¬¿ à¬¸à¬ à¬¿à¬•à­ à¬œà¬¿à¬²à­à¬²à¬¾ à¬šà­Ÿà¬¨ à¬•à¬°à¬¨à­à¬¤à­"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"required": true
+					},
+					"jsonpath": {
+						"path": "configuration.age",
+						"wrap": false
+					},
+					"control": "age",
+					"tag": "input",
+					"label": "à¬¬à­Ÿà¬¸",
+					"type": "radio",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"required": "à¬à¬• à¬¬à­Ÿà¬¸ à¬šà­Ÿà¬¨ à¬•à¬°à¬¨à­à¬¤à­"
+					}
+				},
+				{
+					"defaultValue": "",
+					"validators": {
+						"pattern": "^[1-9]{1}[0-9]{2}\\s{0,1}[0-9]{3}$"
+					},
+					"control": "pincode",
+					"tag": "input",
+					"label": "à¬ªà¬¿à¬¨à­ à¬•à­‹à¬¡à­",
+					"type": "number",
+					"class": "col-sm-12 col-md-6 col-lg-6 mb-1",
+					"errors": {
+						"pattern": "à¬¦à­Ÿà¬¾à¬•à¬°à¬¿ à¬¸à¬ à¬¿à¬•à­ à¬ªà¬¿à¬¨à­ à¬•à­‹à¬¡à­ à¬ªà­à¬°à¬¦à¬¾à¬¨ à¬•à¬°à¬¨à­à¬¤à­"
+					}
+				}
+			],
+			"age": [
+				{
+					"labelName": "à­§à­®+",
+					"labelValue": "18+"
+				},
+				{
+					"labelName": "à­©à­«+",
+					"labelValue": "35+"
+				}
+			],
+			"events": [
+				{
+					"icon": "",
+					"className": "col-sm-12 col-md-6 col-lg-6",
+					"api": "http://localhost:8889/insertUserInfo",
+					"label": "à¬¦à¬¾à¬–à¬² à¬•à¬°à¬¨à­à¬¤à­",
+					"type": "submit",
+					"class": "btn btn-outline-success btn-block",
+					"toaster": {
+						"onError": {
+							"message": "à¬†à¬¨à­à¬¤à¬°à¬¿à¬• à¬¸à¬°à­à¬­à¬° à¬¤à­ƒà¬Ÿà¬¿",
+							"type": "error",
+							"status": "à¬¤à­à¬°à­à¬Ÿà¬¿"
+						},
+						"onSuccess": {
+							"message": "à¬‰à¬ªà¬­à­‹à¬•à­à¬¤à¬¾ à¬¸à­‚à¬šà¬¨à¬¾à¬•à­ à¬¸à¬«à¬³à¬¤à¬¾à¬° à¬¸à¬¹à¬¿à¬¤ à¬…à¬¦à­à­Ÿà¬¤à¬¨ à¬•à¬²à­‡",
+							"type": "success",
+							"status": "à¬¸à¬«à¬³"
+						}
+					}
+				},
+				{
+					"icon": "",
+					"className": "col-sm-12 col-md-6 col-lg-6",
+					"label": "à¬¸à¬«à¬¾",
+					"type": "clear",
+					"class": "btn btn-outline-danger btn-block"
+				}
+			],
+			"id": "USER_INFO_OD"
+		}
+	]
+}
