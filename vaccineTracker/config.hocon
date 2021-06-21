@@ -2,7 +2,7 @@
 	"database": {
 		"name": "couchbase"
 		"uri": "couchbase://127.0.0.1"
-		"auth": "YWRtaW46YWRtaW5AMTIz"
+		"auth": "QWRtaW46QWRtaW5AMTIz"
 	}
 	"insertOptions": {
 		"bucket": "users",
@@ -13,7 +13,6 @@
 		"collection": "config"
 	}
 	"configList": {
-		"query": "select meta().id, * from users where _type='config'",
-		"query1": "select meta().id, details from users where _type='config'"
+		"query": "select meta().id, details from users where _type='config'"
 	}
 }
