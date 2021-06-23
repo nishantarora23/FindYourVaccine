@@ -1,0 +1,88 @@
+<div class="container-fluid user-form-box" *ngIf="configuration">
+    <div class="row justify-content-md-center">
+        <div [formGroup]="userInfo" class="col-sm-12 col-md-8 col-lg-4 form-box">
+            <div class="row mb-1">
+                <h4 class="text-center fw-bold">{{configuration?.title}}</h4>
+            </div>
+            <div class="row mb-1">
+                <div class="{{element?.class}}" *ngFor="let element of configuration?.formDetails">
+                    <ng-container
+                        *ngIf="element?.tag === 'input' && (element?.type === 'text' || element?.type === 'email' || element?.type === 'number')">
+                        <div class="form-outline">
+                            <label class="form-label" for="{{element?.control}}">{{element?.label}}</label>
+                            <input formControlName="{{element?.control}}" type="{{element?.type}}"
+                                id="{{element?.control}}" class="form-control" autocomplete="off"
+                                [ngClass]="{'is-invalid': userInfoFormControlsByName(element?.control).touched && userInfoFormControlsByName(element?.control).errors}" />
+                            <div class="invalid-feedback" *ngIf="userInfoFormControlsByName(element?.control).errors">
+                                <ng-container
+                                    *ngFor="let error of userInfoFormControlsByName(element?.control).errors | keyvalue">
+                                    <div>{{element?.errors[error?.key]}}</div>
+                                </ng-container>
+                            </div>
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf="element?.tag === 'select'">
+                        <label class="form-label" for="{{element?.control}}">{{element?.label}}</label>
+                        <select formControlName="{{element?.control}}" class="form-select form-select-sm"
+                            id="{{element?.control}}" (change)="onChange(element)"
+                            [ngClass]="{'is-invalid': userInfoFormControlsByName(element?.control).touched && userInfoFormControlsByName(element?.control).errors}">
+                            <option *ngFor="let option of test[element.control]" [ngValue]="option">
+                                {{option[element?.api.title]}}
+                            </option>
+                        </select>
+                        <div class="invalid-feedback" *ngIf="userInfoFormControlsByName(element?.control).errors">
+                            <ng-container
+                                *ngFor="let error of userInfoFormControlsByName(element?.control).errors | keyvalue">
+                                <div>{{element?.errors[error?.key]}}</div>
+                            </ng-container>
+                        </div>
+                    </ng-container>
+                    <ng-container *ngIf="element?.tag === 'input' && element?.type === 'radio'">
+                        <label for="" class="form-label d-block">{{element?.label}}</label>
+                        <div
+                            [ngClass]="{'is-invalid': userInfoFormControlsByName(element?.control).touched && userInfoFormControlsByName(element?.control).errors}">
+                            <ng-container *ngFor="let item of test[element.control]">
+                                <div class="form-check form-check-inline">
+                                    <input formControlName="{{element?.control}}" type="radio"
+                                        value="{{item.labelValue}}" class="form-check-input" name="{{element?.control}}"
+                                        id="{{item?.labelValue}}">
+                                    <label class="form-check-label" for="{{item?.labelValue}}">
+                                        {{item?.labelName}}
+                                    </label>
+                                </div>
+                            </ng-container>
+                        </div>
+                        <div class="invalid-feedback" *ngIf="userInfoFormControlsByName(element?.control).errors">
+                            <ng-container
+                                *ngFor="let error of userInfoFormControlsByName(element?.control).errors | keyvalue">
+                                <div>{{element?.errors[error?.key]}}</div>
+                            </ng-container>
+                        </div>
+                    </ng-container>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="{{event?.className}}" *ngFor="let event of this.configuration?.events">
+                    <div class="d-grid gap-3">
+                        <button type="button" class="{{event?.class}}" (click)="performAction(event)">
+                            <em class="{{event?.icon}}"></em>{{event?.label}}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="position-fixed top-0 end-0 p-3" style="z-index: 5">
+    <div id="liveToast" class="toast hide {{response?.type}}" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">{{response?.status}}</strong>
+            <button type="button" class="btn-close" data-dismiss="toast" aria-label="Close"
+                (click)="closeToast()"></button>
+        </div>
+        <div class="toast-body">
+            {{response?.message}}
+        </div>
+    </div>
+</div>

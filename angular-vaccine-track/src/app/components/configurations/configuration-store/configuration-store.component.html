@@ -1,0 +1,31 @@
+<!-- <div>
+    <div *ngFor="let item of items">
+        <h5 class="mb-0">{{item.name}}</h5>
+        <p class="mb-2">{{item.details}}</p>
+    </div>
+</div> -->
+
+<div class="container-fluid user-form-box">
+    <div class="row justify-content-md-center">
+        <div class="col-sm-10 col-md-10 col-lg-10 form-box">
+            <div class="row mb-1">
+                <h4 class="text-center fw-bold">{{configuration?.title}}</h4>
+            </div>
+            <div class="row mb-1">
+                <div class="col-sm-4 col-md-3 col-lg-2">
+                    <div class="list">
+                        <div (click)="performAction(item)" id="{{item.id}}" class="element" *ngFor="let item of items">
+                            <div class="name">{{item?.id}}</div>
+                            <div class="details">{{item.details}}</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-md-9 col-lg-10">
+                    <ngx-codemirror [options]="configuration?.options" [(ngModel)]="obj"
+                        [ngModelOptions]="{standalone: true}" id="cm" name="codeMirror">
+                    </ngx-codemirror>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

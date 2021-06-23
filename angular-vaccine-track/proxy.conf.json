@@ -1,0 +1,9 @@
+{
+    "/common/*": {
+        "target": "http://localhost:8889/",
+        "secure": false,
+        "changeOrigin": true,
+        "logLevel": "info",
+        "pathRewrite": {"^/common" : ""}
+    }
+}

@@ -11,6 +11,7 @@ import io.vertx.ext.web.RoutingContext;
 public class VertxWeb {
 	public static void main(String[] args) {
 	
+		
 		Vertx vertx = Vertx.vertx();
 		HttpServer server = vertx.createHttpServer();
 
